@@ -24,7 +24,7 @@ const MovieReviews = () => {
     return <h2>Loading...</h2>;
   }
   if (reviews.length === 0) {
-    return <p>`We don't have any reviews for this movie.`</p>;
+    return <p>We don't have any reviews for this movie.</p>;
   }
 
   return (

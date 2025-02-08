@@ -1,11 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import {
-  NavLink,
-  Outlet,
-  useLocation,
-  useNavigate,
-  useParams,
-} from 'react-router-dom';
+import { NavLink, Outlet, useLocation, useParams } from 'react-router-dom';
 import { moviesById } from '../services/api';
 import s from './MovieDetailsPage.module.css';
 import { IoMdArrowRoundBack } from 'react-icons/io';
@@ -13,7 +7,6 @@ import toast from 'react-hot-toast';
 
 const MovieDetailsPage = () => {
   const { movieId } = useParams();
-  const navigate = useNavigate();
   const [movie, setMovie] = useState(null);
 
   const location = useLocation();

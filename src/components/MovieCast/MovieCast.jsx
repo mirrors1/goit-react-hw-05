@@ -24,7 +24,7 @@ const MovieCast = () => {
     return <h2>Loading...</h2>;
   }
   if (casts.length === 0) {
-    return <p>We don't have any cast for this movie.</p>;
+    return <p>`We don't have any cast for this movie.`</p>;
   }
 
   return (

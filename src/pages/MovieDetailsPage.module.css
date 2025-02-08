@@ -1,0 +1,62 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dsc {
+  display: flex;
+}
+
+.poster {
+  width: 300px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: left;
+  gap: 10px;
+}
+.genresList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.btn {
+  padding: 3px;
+  width: 100px;
+}
+.arrowBack {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.addInfo {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-start;
+}
+.titleInfo {
+  text-align: left;
+}
+@media only screen and (max-width: 768px) {
+  .dsc {
+    flex-wrap: wrap;
+  }
+  .poster {
+    margin: 0 auto;
+  }
+  .text {
+    padding: 5px;
+    text-align: center;
+    gap: 5px;
+  }
+  .genresList {
+    justify-content: center;
+  }
+  .addInfo {
+    justify-content: center;
+  }
+  .titleInfo {
+    text-align: center;
+  }
+}

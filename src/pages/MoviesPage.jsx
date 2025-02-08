@@ -31,7 +31,6 @@ const MoviesPage = () => {
     <>
       <SearchBar handleChangeQuery={handleChangeQuery} query={query} />
       <MovieList movies={movies} />
-      {movies.length === 0 && <p>Sorry. There are no movie ... </p>}
     </>
   );
 };

@@ -9,6 +9,7 @@ const MovieCast = () => {
   const [casts, setCasts] = useState(null);
 
   useEffect(() => {
+    if (!movieId) return;
     const getData = async () => {
       try {
         const data = await movieCast(movieId);

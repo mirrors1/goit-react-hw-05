@@ -11,6 +11,7 @@ const MoviesPage = () => {
   const query = searchParams.get('query') ?? '';
 
   useEffect(() => {
+    if (!query) return;
     const getData = async () => {
       try {
         const data = await moviesSearch(query);
